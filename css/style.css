@@ -37,8 +37,8 @@ input[id^="search"] {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 315px));
-    grid-gap: 45px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 244px));
+    grid-gap: 15px;
     justify-content: center;
     align-content: center;
     margin-top: 45px;
@@ -50,15 +50,9 @@ input[id^="search"] {
 }
 
 
-.gallery img {
-    width: 100%;;
-    border-style: solid;
-    border-color: black;
-  
-}
-
 img:hover {
     border-color: chartreuse;
     transform: translate( 0.9%);
     transition-duration: 1s;
+    border-style: solid;
 }
