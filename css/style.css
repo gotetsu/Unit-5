@@ -1,14 +1,12 @@
 body {
     margin: 0;
     box-sizing: border-box;
-
+   
 }
 
 /*search input ////////////// ////////////// ////////////// ////////////////////////////   */
 
-.container,
-input[id^="search"], 
-.gallery {
+.container, input[id^="search"], .gallery {
     margin-left: auto;
     margin-right: auto;
 }
@@ -16,8 +14,6 @@ input[id^="search"],
 .main-gallery {
     text-align: center;
     padding-top: 2rem;
-    
-
 }
 
 ::placeholder {
@@ -27,49 +23,42 @@ input[id^="search"],
 #search {
     width: 40%;
     color: rgb(58, 59, 56);
-  
 }
 
 input[id^="search"] {
-
     height: 3rem;
     padding-left: 1rem;
     padding-right: 1rem;
     border: 2px solid #bebebe;
     border-radius: 4px;
-  
 }
 
 /* Grid ////////////// ////////////// ////////////// ///////////////////////////////////   */
 
-
-
 .gallery {
     display: grid;
-   
-    grid-template-columns: repeat(4, 250px);
-    grid-auto-rows: minmax(200px, auto);
+    grid-template-columns: repeat(auto-fit, minmax(150px, 315px));
+    grid-gap: 45px;
     justify-content: center;
     align-content: center;
-    grid-gap: 50px;
-    height: 65vh;
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+   
+   
+
 }
 
+
 .gallery img {
-    height: 200px;
+    width: 100%;;
     border-style: solid;
     border-color: black;
+  
 }
 
 img:hover {
     border-color: chartreuse;
     transform: translate( 0.9%);
     transition-duration: 1s;
-}
-
-
-@media (min-width: 768px) {
-    img {
-        width: 250px;
-    }
 }
